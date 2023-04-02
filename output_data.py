@@ -1,5 +1,8 @@
+#!/usr/bin/env python 
+
 import sql_utils
 import sql 
+import sys
 
 def output_data(filepath):
     # Read sql file, add to sql_content variable
@@ -8,8 +11,7 @@ def output_data(filepath):
     # Using sql utils, execute sql_content variable
     sql_utils.execute_sql(sql_content)
 
-read_sql_filename('sql/filepath.sql')
+# in the CLI, add sql filepath to argument 1 
+if __name__ == '__main__':
+    output_data(sys.argv[1])
 
-# set up argparse?
-# grab user input for filepath, specify w/ sql
-# perhaps use f'brackets' etc. or %s
