@@ -1,7 +1,7 @@
 # Personal Finance Database 
 
-TODO: 
--[x] create a method that can read a sql file instead of needing to write the SQL out.
+Learning about python path development & init
+Creating a personal financial management database in the process 
 
 Good python path tutorial: 
 https://towardsdatascience.com/understanding-python-imports-init-py-and-pythonpath-once-and-for-all-4c5249ab6355
