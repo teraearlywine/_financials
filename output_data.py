@@ -1,7 +1,5 @@
 #!/usr/bin/env python 
-
 import sql_utils
-import sql 
 import sys
 
 def output_data(filepath):

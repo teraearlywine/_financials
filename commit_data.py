@@ -1,6 +1,5 @@
 #!/usr/bin/env python 
 import sql_utils
-import sql 
 import sys
 
 ## Commit data to connected database
