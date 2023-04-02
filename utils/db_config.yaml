@@ -1,5 +1,5 @@
 app: 
-  name: local_financial_management
+  name: _financials
   version: 1.0.0
 
 mysql_config:
