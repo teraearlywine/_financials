@@ -15,3 +15,4 @@ def output_data(filepath):
 if __name__ == '__main__':
     output_data(sys.argv[1])
 
+# Create some function that appends an argument to the sql file path maybe?
