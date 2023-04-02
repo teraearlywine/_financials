@@ -1,15 +1,12 @@
 import sql_utils
 import sql 
 
-def output_data(filepath):
+## Commit data to connected database
+def commit_data(filepath):
     # Read sql file, add to sql_content variable
     with open(filepath, 'r') as sql_file:
         sql_content = sql_file.read()
     # Using sql utils, execute sql_content variable
-    sql_utils.execute_sql(sql_content)
+    sql_utils.commit_sql(sql_content)
 
-read_sql_filename('sql/filepath.sql')
-
-# set up argparse?
-# grab user input for filepath, specify w/ sql
-# perhaps use f'brackets' etc. or %s
+# commit_data('sql/create_table.sql')
