@@ -1,5 +1,4 @@
 import parse_config as pc 
-import utils
 
 connection = pc.pymysql.connect(
     host = pc.db_host,
@@ -14,7 +13,9 @@ connection = pc.pymysql.connect(
 def execute_sql(sql_string):
     m_cursor = connection.cursor() 
     m_cursor.execute(sql_string)
-    results = m_cursor.fetchall() 
+    results = [results[0] for results in m_cursor.fetchall()]
+    # results = m_cursor.fetchall() 
+
     print(results)
 
 # Commit a given SQL string to the local database
