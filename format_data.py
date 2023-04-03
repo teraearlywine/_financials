@@ -16,4 +16,17 @@ def format_data(filepath):
 
 
 if __name__ == '__main__':
-    format_data(sys.argv[1])
+    # format_data(sys.argv[1])
+    # todo: add to own subdirectory
+    def cli_function():
+        # Set file path to directory variables
+        sql_directory = 'sql/'
+        sql_file_name = sys.argv[1]
+        file_suffix = '.sql'
+        # Join Variables
+        full_file_path = sql_directory + sql_file_name + file_suffix
+        # Process sql
+        format_data(full_file_path)
+
+    cli_function()
+
