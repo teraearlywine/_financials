@@ -23,3 +23,8 @@ def commit_sql(sql_string):
     m_cursor = connection.cursor() 
     m_cursor.execute(sql_string)
     connection.commit()
+
+
+# if __name__ == '__main__':
+#     execute_sql()
+#     commit_sql()

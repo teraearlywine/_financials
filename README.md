@@ -7,3 +7,4 @@ Good python path tutorial:
 https://towardsdatascience.com/understanding-python-imports-init-py-and-pythonpath-once-and-for-all-4c5249ab6355
 
 
+export PYTHONPATH=$PYTHONPATH:$(pwd)/utils

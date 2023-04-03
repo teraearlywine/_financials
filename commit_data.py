@@ -1,5 +1,5 @@
 #!/usr/bin/env python 
-import sql_utils
+from utils import sql_utils
 import sys
 
 ## Commit data to connected database
@@ -10,6 +10,7 @@ def commit_data(filepath):
     # Using sql utils, execute sql_content variable
     sql_utils.commit_sql(sql_content)
 
-if __name__ == '__main__':
-    commit_data(sys.argv[1])
+commit_data('sql/create_table.sql')
+# if __name__ == '__main__':
+    # commit_data(sys.argv[1])
 
